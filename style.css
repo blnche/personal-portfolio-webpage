@@ -6,7 +6,6 @@
 }
 body{
     margin: 0;
-    padding: 0;/*remove when vertical scroll ok*/
     display: flex;
     flex-direction: column;
     font-family: Roboto Mono Light;
