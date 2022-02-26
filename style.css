@@ -67,7 +67,8 @@ footer{
 #link-to-social{
     display: flex;
 }
-.social-link{
+.social-link a{
+    display: flex;
 
 }
 .social-link a img{
