@@ -15,6 +15,9 @@ body{
 #navbar{
     top: 0;
     position: fixed;
+    align-self: flex-end;
+    min-width: fit-content;
+    padding: 1rem 2rem;
 }
 ul{
     display: flex;
@@ -25,7 +28,24 @@ li{
 }
 a{
     text-decoration: none;
+    font-size: 1.5em;
     
+}
+#welcome-section{
+    margin: 6rem 5rem;
+    height: 100vh;
+    text-align: center;
+    font-family: Roboto Mono!important;
+    padding: 4rem;
+    font-size: 2em;
+}
+h1{
+    padding: 4rem;
+}
+#welcome-section img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
 }
 main{
     top: 130px;
@@ -33,53 +53,65 @@ main{
     margin: 5rem;
     display: flex;
     flex-direction: column;
-}
-#welcome-section{
     height: 100vh;
-    text-align: center;
-    font-family: Roboto Mono!important;
 }
 #projects-title{
-
+    text-decoration: underline;
+    font-size: 2em;
 }
 #projects{
     display: flex;
-    flex-wrap: wrap;
-    /* height: 100vh; not sure fo now*/
+    flex-direction: column;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+    grid-gap: 4rem;
 }
 .project-tile{
     margin: 2rem;
-    padding: 4rem;
-
+    background-color: rgba(128, 128, 128, 0.13);
+    border-radius: 0.375rem;
+    border: 1px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+.project-tile p{
+    text-align: center;
 }
 .project-tile a img{
-    height: 8rem;
-    width: 11rem;
+    object-fit: cover;
 }
 footer{
     display: flex;
     flex-direction: column;
-
-}
-#social-link-title{
-
+    height: 80vh;
+    margin: 8rem 5rem;
+    justify-content: space-between;
 }
 #link-to-social{
     display: flex;
+    margin: 2rem;
+    justify-content: space-evenly;
+}
+#social-link-title{
+    font-size: 2em;
+    margin: 2rem;
 }
 .social-link a{
+    min-width: fit-content;
     display: flex;
-
+    margin: 2rem;
 }
 .social-link a img{
     height: 2rem;
     width: 2rem;
+    padding: 1rem;
 }
 #profile-link{
 
 }
 #copyright{
-
+    text-align: center;
 }
 img{
     width: 100%;
