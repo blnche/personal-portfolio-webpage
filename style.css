@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto Mono Light;
+}
+@font-face {
+    font-family: Roboto Mono;
+    src: url(Fonts/Roboto_Mono/static/RobotoMono-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto Mono Light;
+    src: url(Fonts/Roboto_Mono/static/RobotoMono-Light.ttf);
+}
+#navbar{
+    top: 0;
+    position: fixed;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+    
+}
+main{
+    top: 130px;
+    position: relative;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+#welcome-section{
+    height: 100vh;
+    text-align: center;
+    font-family: Roboto Mono!important;
+}
+#projects-title{
+
+}
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100vh; not sure fo now*/
+}
+.project-tile{
+    margin: 2rem;
+    padding: 4rem;
+
+}
+.project-tile a img{
+    height: 8rem;
+    width: 11rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+
+}
+#social-link-title{
+
+}
+#link-to-social{
+    display: flex;
+}
+.social-link{
+
+}
+.social-link a img{
+    height: 2rem;
+    width: 2rem;
+}
+#profile-link{
+
+}
+#copyright{
+
+}
+img{
+    width: 100%;
+}
