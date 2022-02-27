@@ -1,10 +1,6 @@
 
 /* GENERAL */
 
-/* * {
-    outline: solid 1px red;
-} */
-
 body{
     margin: 0;
     display: flex;
@@ -39,7 +35,6 @@ span{
     top: 0;
     left: 0;
     position: fixed;
-    justify-content: flex-end;
     padding: 2rem 2rem;
     background-color: white;
     width: 100%;
@@ -47,8 +42,10 @@ span{
 }
 ul{
     display: flex;
+    justify-content: flex-end;
     list-style: none;
     margin-right: 4rem;
+    width: 100%;
 }
 #navbar a{
     font-size: 1.5em;
@@ -205,6 +202,11 @@ footer {
     #navbar{
         padding: 0.5rem 1rem;
     }
+    ul {
+        margin-right: 2rem;
+        padding-left: 0rem;
+        justify-content: space-around;
+    }
     #navbar a{
         font-size: 1em;
         padding: 0.5rem;
@@ -219,6 +221,7 @@ footer {
 
     #welcome-section {
         font-size: 1em;
+        padding-top: 4rem;
     }
     h1{
         padding: 2rem;
