@@ -27,6 +27,9 @@ a{
     font-size: 1.5em;
     color: black;
 }
+span{
+    text-shadow: 2px 3px red;
+}
 
 /* NAVBAR */
 
@@ -44,17 +47,12 @@ a{
 ul{
     display: flex;
     list-style: none;
-    /* float: right; */
     margin-right: 2rem;
 }
-li{
-    /* padding: 1rem; */
-    /* display: list-item; why ?*/
-}
 #navbar a{
-    font-size: 1.75em;
+    font-size: 1.5em;
     padding: 1rem;
-    display: block; /* why ?*/
+    display: block;
 }
 #navbar a:hover{
     background-color: rgba(128, 128, 128, 0.24);
@@ -70,7 +68,7 @@ li{
     height: 100vh;
     width: 100%;
     font-family: Roboto Mono!important;
-    font-size: 2em;
+    font-size: 1.75em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -94,7 +92,7 @@ h1{
     flex-direction: column;
     width: 100%;
 }
-#projects-title p{
+#projects-header p{
     max-width: fit-content;
     padding-left: 2rem;
     font-size: 2em;
@@ -105,12 +103,12 @@ h1{
 .projects-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(550px,1fr));
-    grid-gap: 4rem;
+    grid-gap: 2.5rem;
     width: 100%;
-    overflow:scroll;
+    /* overflow:scroll; */
 }
 .project-tile{
-    margin: 2rem;
+    margin: 5rem 2rem 2rem 3rem;
     background-color: rgba(128, 128, 128, 0.13);
     border-radius: 0.375rem;
     border: 1px solid white;
@@ -118,7 +116,7 @@ h1{
 }
 .project-tile img{
     object-fit: cover;
-    display: block; /*why?*/
+    display: block;
 }
 .project-tile p{
     text-align: center;
@@ -129,7 +127,7 @@ h1{
 footer{
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
     justify-content: space-between;
     width: 100%;
 }
@@ -158,5 +156,8 @@ footer{
 }
 #copyright{
     text-align: center;
+    font-size: 1.5em;
+}
+#copyright span{
     font-size: 1.5em;
 }
