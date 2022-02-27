@@ -128,40 +128,136 @@ h1{
 
 /* FOOTER */
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     height: 90vh;
     justify-content: space-between;
     width: 100%;
 }
-#link-to-social{
+#link-to-social {
     display: flex;
     justify-content: center;
 }
-#social-link-title p{
+#social-link-title p {
     font-size: 2em;
     padding-left: 2rem;
     max-width: fit-content;
 }
-.social-link a{
-    display: flex;
+.social-link a, p {
+    display: inline-block;
+    position: relative;
+}
+.social-link a {
     align-items: center;
     margin: 1rem;
-    padding: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem ;
 }
-.social-link a p{
+.social-link p, img {
+    vertical-align: middle;
+}
+.social-link p {
     padding: 1rem;
+    margin: 0;
 }
-.social-link a img{
+.social-link img {
     height: 2rem;
     width: 2rem;
     padding: 1rem;
 }
-#copyright{
+
+/* LINE EFFECT ON SOCIAL LINK */
+.social-link a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.social-link a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+#copyright {
     text-align: center;
     font-size: 1.5em;
 }
-#copyright span{
+#copyright span {
     font-size: 1.5em;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:700px) {
+
+    /* NAVBAR */
+    #navbar{
+        padding: 0.5rem 1rem;
+    }
+    #navbar a{
+        font-size: 1em;
+        padding: 0.5rem;
+    }
+    #navbar a:active{
+        background-color: rgba(128, 128, 128, 0.24);
+        border-radius: 0.375rem;
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-underline-offset: 0.5rem;
+    }
+
+    #welcome-section {
+        font-size: 1em;
+    }
+    h1{
+        padding: 2rem;
+    }
+
+    #projects-header p {
+        font-size: 1em;
+    }
+
+    #social-link-title p {
+        font-size: 1em;
+    }
+
+    #link-to-social {
+        flex-direction: column;
+    }
+    .social-link p {
+        font-size: 0.75em;
+    }
+    .social-link img {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    /* LINE EFFECT ON SOCIAL LINK */
+    .social-link a:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .social-link a:active:after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    #copyright {
+        font-size: 1em;
+    }
 }
